@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+    <div style="max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+        <h2>User Registration</h2>
+        <form action="/register" method="post" style="font-family: Arial, sans-serif;">
+            <div style="margin-bottom: 20px;">
+                <label for="username" style="display: block; font-weight: bold;">Username:</label>
+                <input type="text" id="username" name="username" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="password" style="display: block; font-weight: bold;">Password:</label>
+                <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <!-- Radio Buttons for Role -->
+            <div style="margin-bottom: 20px;">
+                            <label for="roles" style="display: block; font-weight: bold;">Role:</label>
+                            <input type="text" id="roles" name="roles" required style="width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+
+            <!-- You may include additional fields for other properties of UserEntity here -->
+
+            <div style="margin-bottom: 20px;">
+                <button type="submit" style="background-color: #007BFF; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Register</button>
+                <a href="/login">Login into account</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

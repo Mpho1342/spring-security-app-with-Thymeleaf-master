@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Page content styles */
+        #our-story, #our-team, #our-values {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <section id="our-story">
+        <h2>Our Story</h2>
+        <p>
+            Welcome to our company! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Our journey began in [year] with a passion for [describe your mission].
+            Since then, we've been committed to [your company's mission or goal].
+        </p>
+        <p th:text="${name}"></p>
+    </section>
+
+    <section id="our-team">
+        <h2>Our Team</h2>
+        <ul>
+            <li>
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Co-Founder & CEO</p>
+            </li>
+            <li>
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Co-Founder & CTO</p>
+            </li>
+            <!-- Add more team members as needed -->
+        </ul>
+    </section>
+
+    <section id="our-values">
+        <h2>Our Values</h2>
+        <ul>
+            <li>Quality</li>
+            <li>Innovation</li>
+            <li>Customer Satisfaction</li>
+            <!-- Add your company's core values here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; [Year] Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
